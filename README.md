@@ -28,22 +28,22 @@ Tykit是一个Typecho主题模板开发框架；
 | --------------------------- | ---------------------- | ----------------------------- |
 | Header()                    | 获取Typecho Header     | <?php Get::Header(); ?>       |
 | Footer()                    | 获取Typecho Footer     | <?php Get::Footer(); ?>       |
-| SiteUrl()                   | 获取站点的 URL         | <?php Get::SiteUrl(); ?>       |
-| AssetsUrl()                 | 获取主题的资源文件 URL | <?php Get::AssetsUrl(); ?>       |
-| TypechoVer()                | 获取 Typecho 版本号    | <?php Get::TypechoVer(); ?>      |
-| FrameworkVer()              | 获取框架版本号         | <?php Get::FrameworkVer(); ?>      |
-| Options($param)             | 获取指定的设置项       | <?php echo Get::Options(); ?>      |
-| Fields($param)              | 获取自定义字段         | <?php echo Get::Fields(); ?>      |
-| Next()                      | 循环输出文章           | <?php Get::Next(); ?>        |
-| Need($file)                 | 引入文件               | <?php Get::Need('file'); ?>        |
-| Is($type)                   | 获取当前页面类型       | <?php Get::Is('type'); ?>         |
-| PageNav($prev, $next)       | 获取分页导航           | <?php Get::PageNav(); ?>         |
-| PageLink($link, $type = '') | 获取分页链接           | <?php Get::PageLink(); ?>       |
-| Total()                     | 获取文章总数           | <?php Get::Total(); ?>       |
-| PageSize()                  | 获取每页文章数         | <?php Get::PageSize(); ?>       |
-| CurrentPage()               | 获取当前页码           | <?php Get::CurrentPage(); ?>       |
-| Permalink()                 | 获取文章链接           | <?php Get::Permalink();>       |
-| Field($field)               | 获取自定义字段         | <?php Get::Field(); ?>       |
+| SiteUrl()                   | 获取站点的 URL         | <?php Get::SiteUrl(); ?>      |
+| AssetsUrl()                 | 获取主题的资源文件 URL | <?php Get::AssetsUrl(); ?>    |
+| TypechoVer()                | 获取 Typecho 版本号    | <?php Get::TypechoVer(); ?>   |
+| FrameworkVer()              | 获取框架版本号         | <?php Get::FrameworkVer(); ?> |
+| Options($param)             | 获取指定的设置项       | <?php echo Get::Options(); ?> |
+| Fields($param)              | 获取自定义字段         | <?php echo Get::Fields(); ?>  |
+| Next()                      | 循环输出文章           | <?php Get::Next(); ?>         |
+| Need($file)                 | 引入文件               | <?php Get::Need('file'); ?>   |
+| Is($type)                   | 获取当前页面类型       | <?php Get::Is('type'); ?>     |
+| PageNav($prev, $next)       | 获取分页导航           | <?php Get::PageNav(); ?>      |
+| PageLink($link, $type = '') | 获取分页链接           | <?php Get::PageLink(); ?>     |
+| Total()                     | 获取文章总数           | <?php Get::Total(); ?>        |
+| PageSize()                  | 获取每页文章数         | <?php Get::PageSize(); ?>     |
+| CurrentPage()               | 获取当前页码           | <?php Get::CurrentPage(); ?>  |
+| Permalink()                 | 获取文章链接           | <?php Get::Permalink();>      |
+| Field($field)               | 获取自定义字段         | <?php Get::Field(); ?>        |
 
 #### GetTheme 类
 
