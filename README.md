@@ -1,5 +1,5 @@
 # 欢迎使用Tykit框架
-### 基于TTDF框架二次开发
+### 基于[TTDF](https://github.com/ShuShuicu/Typecho-Theme-Development-Framework)框架二次开发
 
 > Tykit框架
 
@@ -159,6 +159,9 @@ Tykit是一个Typecho主题模板开发框架；
 
 # 更新日志
 
+## 1.2.2
+ - 修改一些逻辑
+
 ## 1.2.1
 
 - 修复主题切换时报错的问题
@@ -168,6 +171,8 @@ Tykit是一个Typecho主题模板开发框架；
 - 优化Get::HelloWorld()展示的界面UI
 - 修改主题文件目录
   > header.php&footer.php移动至Common目录下
+
+------
 
 ## 1.1.4
 
