@@ -1,8 +1,4 @@
 <?php
-    require_once 'Get.php';
-    require_once 'Config.php';
-?>
-<?php
 /**
  * Json API Functions
  * @author 鼠子Tomoriゞ

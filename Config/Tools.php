@@ -1,8 +1,4 @@
 <?php
-    require_once 'Get.php';
-    require_once 'Config.php';
-?>
-<?php
 /**
  * Tools Functions
  */
