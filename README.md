@@ -26,24 +26,24 @@ Tykit是一个Typecho主题模板开发框架；
 
 | 方法                        | 描述                   | 示例                          |
 | --------------------------- | ---------------------- | ----------------------------- |
-| Header()                    | 获取Typecho Header     | <?php Get::Header(); ?>       |
-| Footer()                    | 获取Typecho Footer     | <?php Get::Footer(); ?>       |
-| SiteUrl()                   | 获取站点的 URL         | <?php Get::SiteUrl(); ?>      |
-| AssetsUrl()                 | 获取主题的资源文件 URL | <?php Get::AssetsUrl(); ?>    |
-| TypechoVer()                | 获取 Typecho 版本号    | <?php Get::TypechoVer(); ?>   |
-| FrameworkVer()              | 获取框架版本号         | <?php Get::FrameworkVer(); ?> |
-| Options($param)             | 获取指定的设置项       | <?php echo Get::Options(); ?> |
-| Fields($param)              | 获取自定义字段         | <?php echo Get::Fields(); ?>  |
-| Next()                      | 循环输出文章           | <?php Get::Next(); ?>         |
-| Need($file)                 | 引入文件               | <?php Get::Need('file'); ?>   |
-| Is($type)                   | 获取当前页面类型       | <?php Get::Is('type'); ?>     |
-| PageNav($prev, $next)       | 获取分页导航           | <?php Get::PageNav(); ?>      |
-| PageLink($link, $type = '') | 获取分页链接           | <?php Get::PageLink(); ?>     |
-| Total()                     | 获取文章总数           | <?php Get::Total(); ?>        |
-| PageSize()                  | 获取每页文章数         | <?php Get::PageSize(); ?>     |
-| CurrentPage()               | 获取当前页码           | <?php Get::CurrentPage(); ?>  |
+| Header()                    | 获取Typecho Header     | <?php Get::Header();？>       |
+| Footer()                    | 获取Typecho Footer     | <?php Get::Footer();？>       |
+| SiteUrl()                   | 获取站点的 URL         | <?php Get::SiteUrl();？>      |
+| AssetsUrl()                 | 获取主题的资源文件 URL | <?php Get::AssetsUrl();？>    |
+| TypechoVer()                | 获取 Typecho 版本号    | <?php Get::TypechoVer();？>   |
+| FrameworkVer()              | 获取框架版本号         | <?php Get::FrameworkVer();？> |
+| Options($param)             | 获取指定的设置项       | <?php echo Get::Options();？> |
+| Fields($param)              | 获取自定义字段         | <?php echo Get::Fields();？>  |
+| Next()                      | 循环输出文章           | <?php Get::Next();？>         |
+| Need($file)                 | 引入文件               | <?php Get::Need('file');？>   |
+| Is($type)                   | 获取当前页面类型       | <?php Get::Is('type');？>     |
+| PageNav($prev, $next)       | 获取分页导航           | <?php Get::PageNav();？>      |
+| PageLink($link, $type = '') | 获取分页链接           | <?php Get::PageLink();？>     |
+| Total()                     | 获取文章总数           | <?php Get::Total();？>        |
+| PageSize()                  | 获取每页文章数         | <?php Get::PageSize();？>     |
+| CurrentPage()               | 获取当前页码           | <?php Get::CurrentPage();？>  |
 | Permalink()                 | 获取文章链接           | <?php Get::Permalink();>      |
-| Field($field)               | 获取自定义字段         | <?php Get::Field(); ?>        |
+| Field($field)               | 获取自定义字段         | <?php Get::Field();？>        |
 
 #### GetTheme 类
 
@@ -190,13 +190,13 @@ Tykit是一个Typecho主题模板开发框架；
 - 新增Get::PageSize()方法
 - 优化GetPost::Tags()方法
 - 优化GetPost::Category()方法
-  > 新增$split、$link、$default参数, 如<?php GetPost::Category(',', true, '暂无分类'); ?>
+  > 新增$split、$link、$default参数, 如<?php GetPost::Category(',', true, '暂无分类');？>
 
 ## 1.1.2
 
 - 优化Json输出
 - 优化GetTheme::AssetsUrl()方法
-  > 改为<?php GetTheme::AssetsUrl(); ?>
+  > 改为<?php GetTheme::AssetsUrl();？>
 - 修改优化assets文件加载方式
 
 ## 1.1.1
@@ -207,7 +207,7 @@ Tykit是一个Typecho主题模板开发框架；
 - 新增Get::PageLink()方法
 - 优化GetPost::Tags()方法
 - 优化GetPost::Excerpt()方法
-- 新增参数$length，可自定义输出字数，如<?php GetPost::Excerpt(100); ?>
+- 新增参数$length，可自定义输出字数，如<?php GetPost::Excerpt(100);？>
 
 ## 1.1.0
 
@@ -218,9 +218,9 @@ Tykit是一个Typecho主题模板开发框架；
 - 新增Json输出
 
 - 优化GetComments::CurrentPage()方法
-  > 改为自行定义，如<?php GetComments::CommentsNum('无评论', '共1评论','共%s评论'); ?>
+  > 改为自行定义，如<?php GetComments::CommentsNum('无评论', '共1评论','共%s评论');？>
 - 新增GetComments::CommentsPage()方法
-  > 获取评论页面，如<?php GetComments::CommentsPage('&laquo; 前一页', '后一页 &raquo;'); ?>
+  > 获取评论页面，如<?php GetComments::CommentsPage('&laquo; 前一页', '后一页 &raquo;');？>
 - 新增GetComments::CommentsList()方法
 - 新增GetComments::CommentsNum()方法
 - 新增GetComments::CommentsForm()方法
