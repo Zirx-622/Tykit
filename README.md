@@ -12,7 +12,7 @@ Tykit是一个Typecho主题模板开发框架；
 
 > Config/Config.php 配置文件  
 > Config/Get.php Get函数  
-> Config/Options.php 主题设置  
+> Config/Custom.php 主题设置页面自定义 
 > Config/Functions.php 函数功能  
 > Config/Json.php REST API
 
@@ -101,6 +101,15 @@ Tykit是一个Typecho主题模板开发框架；
 | TimerStop() | 获取加载时间 | <?php GetFunctions::TimerStop();> |
 | ArtCount()  | 获取文章字数 | <?php GetFunctions::ArtCount();>  |
 
+#### GetSiteData 类
+
+提供一些常用的功能函数。
+
+| 方法        | 描述         | 示例                              |
+| ----------- | ------------ | --------------------------------- |
+| Url()       | 获取加载时间 | <?php GetSiteData::Url();>        |
+| Title()     | 获取文章字数 | <?php GetSiteData::Title();>      |
+
 #### GetJsonData 类
 
 提供Json数据输出。
@@ -158,6 +167,11 @@ Tykit是一个Typecho主题模板开发框架；
 ---
 
 # 更新日志
+
+## 1.2.3
+
+ - 新增GetSiteData::Url()方法
+ - 新增GetSiteData::Title()方法
 
 ## 1.2.2
  - 修改一些逻辑
