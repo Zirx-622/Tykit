@@ -762,3 +762,47 @@ class GetJsonData {
     
 
 }
+
+class GetSiteData {   
+    use ErrorHandler;
+    
+    private function __construct() {}
+    private function __clone() {}
+    public function __wakeup() {}
+
+    // 获取网站标题
+    public static function Title(?bool $echo = true){
+        try {
+            // 获取网站名称
+            $Title = \Helper::options()->title;
+            // 如果需要直接输出
+            if ($echo) {
+                echo htmlspecialchars($Title);
+            }
+            // 返回网站名称
+            return $Title;
+            } catch (Exception $e) {
+                // 异常处理，返回错误信息
+                return self::handleError('获取网站名称失败', $e);
+        }
+    }
+
+    // 获取网站链接
+    public static function Url(?bool $echo = true){
+        try {
+            // 获取网站链接
+            $Url = \Helper::options()->siteUrl;
+            // 如果需要直接输出
+            if ($echo) {
+                echo htmlspecialchars($Url);
+            }
+            // 返回网站链接
+            return $Url;
+            } catch (Exception $e) {
+                // 异常处理，返回错误信息
+                return self::handleError('获取网站链接失败', $e);
+        }
+    }
+    
+
+}
